@@ -6,7 +6,7 @@
 
 * This repository is the implementation of the final project for **(CS 598) Deep Learning for Healthcare**, Spring 2025 term.
 
-* In this work, we utilized a publicly avaiilable [dataset](https://physionet.org/content/dreamt/2.0.0/) related to sleep disorders, introduced in [this study](https://raw.githubusercontent.com/mlresearch/v248/main/assets/wang24a/wang24a.pdf).
+* In this work, we utilized a publicly available [dataset](https://physionet.org/content/dreamt/2.0.0/) related to sleep disorders, introduced in [this study](https://raw.githubusercontent.com/mlresearch/v248/main/assets/wang24a/wang24a.pdf).
 
 * The citation to the original paper is as follows:
 ```
