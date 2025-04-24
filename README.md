@@ -10,6 +10,7 @@
 
 * The dataset is publicly available at [PhysioNet](https://physionet.org/content/dreamt/2.0.0/) upon credentialed access.
 
+```
 @inproceedings{wang2024addressing,
   title={Addressing wearable sleep tracking inequity: a new dataset and novel methods for a population with sleep disorders},
   author={Wang, Will Ke and Yang, Jiamu and Hershkovich, Leeor and Jeong, Hayoung and Chen, Bill and Singh, Karnika and Roghanizad, Ali R and Shandhi, Md Mobashir Hasan and Spector, Andrew R and Dunn, Jessilyn},
@@ -17,6 +18,7 @@
   pages={380--396},
   year={2024}
 }
+```
 
 ## **1. Requirements**
 
