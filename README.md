@@ -1,7 +1,5 @@
 # **(CS 598) Deep Learning for Healthcare: Final Project**
 
----
-
 ## **Overview of the Project**
 
 ### **1. Introduction**
@@ -27,13 +25,11 @@
 
 ### **3. What's New?: Our Efforts to Extend the Research**
 
----
 
 ## **Sample Dataset**
 
 * This section describes a sample dataset
 
----
 
 
 ## **Code Implementation**
@@ -47,14 +43,11 @@ conda env create --file environment_dlh.yaml
 ```
 
 
----
 
 ## **Results**
 
 * ***Copy table & Figure(s) from final report***
 
-
----
 
 ## **Contributions**
 
