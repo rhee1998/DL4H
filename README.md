@@ -1,15 +1,18 @@
 # **(CS 598) Deep Learning for Healthcare: Final Project**
 
-## **0. Overview**
+---
 
-* This repository is the implementation of the final project for *(CS 598) Deep Learning for Healthcare*, Spring 2025 term.
+## **Overview of the Project**
 
-* My NetID is `wounsuk2`, and as this is a solo team, the conceptualization, model development, and writing of the final report was solely done by Wounsuk Rhee.
+### **1. Introduction**
+
+* This repository is the implementation of the final project for **(CS 598) Deep Learning for Healthcare**, Spring 2025 term.
 
 * In this work, we utilized a publicly avaiilable dataset related to sleep disorders, introduced in [this study](https://raw.githubusercontent.com/mlresearch/v248/main/assets/wang24a/wang24a.pdf).
 
 * The dataset is publicly available at [PhysioNet](https://physionet.org/content/dreamt/2.0.0/) upon credentialed access.
 
+* The citation to the original paper is as follows:
 ```
 @inproceedings{wang2024addressing,
   title={Addressing wearable sleep tracking inequity: a new dataset and novel methods for a population with sleep disorders},
@@ -20,14 +23,39 @@
 }
 ```
 
-## **1. Requirements**
+### **2. What's Already Done?: A Brief Summary of the Original Paper**
+
+### **3. What's New?: Our Efforts to Extend the Research**
+
+---
+
+## **Sample Dataset**
+
+* This section describes a sample dataset
+
+---
+
+
+## **Code Implementation**
+
+### **1. Specification of Dependencies**
 
 Create a new conda environment by running this command:
 
-```bash
+```
 conda env create --file environment_dlh.yaml
 ```
 
-# **4. Results**
+
+---
+
+## **Results**
 
 * ***Copy table & Figure(s) from final report***
+
+
+---
+
+## **Contributions**
+
+My NetID is `wounsuk2`, and as this is a solo team, the conceptualization, model development, and writing of the final report was solely done by Wounsuk Rhee.
