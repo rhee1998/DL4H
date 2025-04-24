@@ -1,6 +1,6 @@
 # **(CS 598) Deep Learning for Healthcare: Final Project**
 
-## **Overview of the Project**
+## **\book Overview of the Project**
 
 ### **1. Introduction**
 
