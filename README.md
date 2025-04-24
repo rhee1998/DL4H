@@ -1,6 +1,6 @@
 # **(CS 598) Deep Learning for Healthcare: Final Project**
 
-## **\book Overview of the Project**
+## **📖 Overview of the Project**
 
 ### **1. Introduction**
 
@@ -24,13 +24,13 @@
 ### **3. What's New?: Our Efforts to Extend the Research**
 
 
-## **Sample Dataset**
+## **📊 Sample Dataset**
 
 * This section describes a sample dataset
 
 
 
-## **Code Implementation**
+## **✏️ Code Implementation**
 
 ### **1. Specification of Dependencies**
 
@@ -42,11 +42,11 @@ conda env create --file environment_dlh.yaml
 
 
 
-## **Results**
+## **📐 Results**
 
 * ***Copy table & Figure(s) from final report***
 
 
-## **Contributions**
+## **👏 Contributions**
 
 My NetID is `wounsuk2`, and as this is a solo team, the conceptualization, model development, and writing of the final report was solely done by Wounsuk Rhee.
