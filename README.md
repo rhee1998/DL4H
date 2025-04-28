@@ -87,6 +87,7 @@ Clone this repository and create a new conda environment by running this command
 conda env create --file environment_dlh.yaml
 conda activate DLH
 ```
+For those in a rush, you may skip the following sections and go to ▶️***5. Putting Them All Together***◀️
 
 ### **2. Data Preprocessing**
 
