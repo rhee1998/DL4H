@@ -89,7 +89,7 @@ conda env create --file environment_dlh.yaml
 
 ### **2. Data Preprocessing**
 
-First, we need to slice the raw signal(s) into epochs of 30 seconds in length. The following code generates a new directory `dataset/preproc/<SID>` and saves a series of sliced signals and a summary of the signals. Please refer to `utils.py` to examine how the features were engineered. It should be noted that ⚠️the code provided by the original authors did not work properly, so the preprocessing script had to be written from _scratch_⚠️.
+First, we need to slice the raw signal(s) into epochs of 30 seconds in length. The following code generates a new directory `dataset/preproc/<SID>` and saves a series of sliced signals and a summary of the signals. Please refer to `utils.py` to examine how the features were engineered. It should be noted that ⚠️***the code provided by the original authors did not work properly***⚠️, so the preprocessing script had to be written from scratch.
 
 
 
