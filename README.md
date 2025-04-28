@@ -85,12 +85,41 @@ Clone this repository and create a new conda environment by running this command
 
 ```
 conda env create --file environment_dlh.yaml
+conda activate DLH
 ```
 
 ### **2. Data Preprocessing**
 
 First, we need to slice the raw signal(s) into epochs of 30 seconds in length. The following code generates a new directory `dataset/preproc/<SID>` and saves a series of sliced signals and a summary of the signals. Please refer to `utils.py` to examine how the features were engineered. It should be noted that ⚠️***the code provided by the original authors did not work properly***⚠️, so the preprocessing script had to be written from scratch.
 
+```
+python3 data_preprocess.py --sid=<SID>
+```
+
+### **3. Run Epoch Classifier**
+`run_epoch_clf.py` implements the XGBoost model that classifies the 30-second epochs of device measurement data. `CI=False` model takes features derived from BVP, EDA, TEMP, IBI, and ACC and `CI=True` model takes additional clinical features related to the patient. Running the following code will generate a temporary file in `model/postproc`, which will be necessary to execute the next stage successfully.
+
+```
+python3 run_epoch_clf.py --sid=<SID> --clinical_info=<True/False>
+```
+
+
+### **4. Run LSTM Post-Processing Module**
+
+`run_post_lstm.py` implements the LSTM post-processing process, and the weights for each window size of 5, 10, 15, and 20 minutes for each of the five folds are provided in `model/post_LSTM_WIN=<WINDOW_SIZE>_CI=<True/False>` directories. Upon executing the following code, the results are generated in a new directory named `result` as a `.csv` file. This consists of the output probabilities of the epoch classifier and post-processed probabilities.
+
+```
+python3 run_post_lstm.py --sid=<SID> --clinical_info=<True/False> --window_size=<WINDOW_SIZE>
+```
+
+
+### **5. Putting Them All Together**
+
+The epoch classification and post-processing algorithms are packed into a single script, so for those who want to process their data quickly, one can simply run the following code:
+
+```
+python3 run_full_model.py --sid=<SID> --clinical_info=<True/False> --window_size=<WINDOW_SIZE>
+```
 
 
 ## **📐 Results**
