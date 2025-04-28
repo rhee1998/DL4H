@@ -143,14 +143,14 @@ python3 run_full_model.py --sid=<SID> --clinical_info=<True/False> --window_size
 
 ### **2. ROC Curves for Specific Models**
 
-<img src="image/Fig_2.png" width="70%">
+<img src="image/Fig_2.png" width="50%">
 
 
 ### **3. SHAP Results of Epoch Classifiers**
 
 SHAP results of the epoch classifiers revealed that ⚠️***clinical information was not as impactful***⚠️ to predicting the outputs of a 30-second epoch, contradicting the original paper's claim.
 
-<img src="image/Fig_3.png" width="70%">
+<img src="image/Fig_3.png" width="100%">
 
 
 ### **4. Impact of Window Size**
@@ -159,7 +159,7 @@ The results shown below clearly indicates that increased window size results in 
 
 An interesting result is that the incorporation of ⚠️***clinical information did not improve model performance in larger window settings***⚠️, but rather degraded the performance, which seems counterintuitive. It can be attributed to the fact that clinical information is too global in scale and there is some possibility that they can induce patient-specific bias.
 
-<img src="image/Fig_4.png" width="70%">
+<img src="image/Fig_4.png" width="50%">
 
 
 ## **👏 Contributions**
