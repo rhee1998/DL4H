@@ -49,7 +49,7 @@
 
   (1) First, we integrate ***<u>various clinical features</u>*** other than just obesity and apnea severity. Demographics such as age and sex, as well as comorbidity status (chronic diseases, psychological disorders, gastroesophageal reflux disease, etc.) are further included.
 
-  (2) Second, we perform a series of ***<u>SHAP analyses to quantitatively asssess the Epoch Classifier's interpretability</u>***. This was done in search for evidence for the justification of adding clinical features, which, unfortunately, turned out to be unsuccessful.
+  (2) Second, we perform a series of <u>***SHAP analyses to quantitatively asssess the Epoch Classifier's interpretability***</u>. This was done in search for evidence for the justification of adding clinical features, which, unfortunately, turned out to be unsuccessful.
 
   (3) Thirdly, we explored the ***<u>impact of window sizes on model performance</u>*** when developing LSTM-based post-processing modules.
 
