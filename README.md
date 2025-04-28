@@ -125,7 +125,51 @@ python3 run_full_model.py --sid=<SID> --clinical_info=<True/False> --window_size
 
 ## **📐 Results**
 
-* ***Copy table & Figure(s) from final report***
+### **1. Model Performance on the Test Set**
+
+|      Model      |  AUROC   |   F1-Score   |
+|:---------------:|:--------:|:------------:|
+| Device Only     | 0.844    |   0.741      |
+| Window = 0 min. | (0.838-0.849) | (0.731-0.750) |
+| Device Only     | 0.860    |   0.751      |
+| Window = 5 min. | (0.855-0.865) | (0.742-0.760) |
+| Device Only     | 0.866    |   0.760      |
+| Window = 10 min.| (0.861-0.872) | (0.751-0.769) |
+| Device Only     | 0.869    |   0.762      |
+| Window = 15 min.| (0.864-0.874) | (0.753-0.771) |
+| Device Only     | 0.871    |   0.768      |
+| Window = 20 min.| (0.866-0.876) | (0.759-0.777) |
+| Device + Demo   | 0.852    |   0.750      |
+| Window = 0 min. | (0.847-0.858) | (0.741-0.759) |
+| Device + Demo   | 0.850    |   0.747      |
+| Window = 5 min. | (0.845-0.856) | (0.738-0.756) |
+| Device + Demo   | 0.858    |   0.758      |
+| Window = 10 min.| (0.852-0.863) | (0.749-0.767) |
+| Device + Demo   | 0.862    |   0.767      |
+| Window = 15 min.| (0.857-0.868) | (0.759-0.776) |
+| Device + Demo   | 0.864    |   0.767      |
+| Window = 20 min.| (0.859-0.869) | (0.759-0.776) |
+
+
+### **2. ROC Curves for Specific Models**
+
+<img src="image/Fig_2.png" width="70%">
+
+
+### **3. SHAP Results of Epoch Classifiers**
+
+SHAP results of the epoch classifiers revealed that ⚠️***clinical information was not as impactful***⚠️ to predicting the outputs of a 30-second epoch, contradicting the original paper's claim.
+
+<img src="image/Fig_3.png" width="70%">
+
+
+### **4. Impact of Window Size**
+
+The results shown below clearly indicates that increased window size results in improved test AUROC, implying the importance of the integration of long-range temporal relations. This aligns with the assertion made in the original paper.
+
+An interesting result is that the incorporation of ⚠️***clinical information did not improve model performance in larger window settings***⚠️, but rather degraded the performance, which seems counterintuitive. It can be attributed to the fact that clinical information is too global in scale and there is some possibility that they can induce patient-specific bias.
+
+<img src="image/Fig_4.png" width="70%">
 
 
 ## **👏 Contributions**
