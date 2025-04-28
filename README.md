@@ -55,7 +55,7 @@
 
 * The summary of the final project is given as follows:
 
-<img src="image/Fig_1.png" width="50%">
+<img src="image/Fig_1.png" width="70%">
 
 
 
