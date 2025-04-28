@@ -55,7 +55,7 @@
 
 * The summary of the final project is given as follows:
 
-![**Fig. 1.** An overview of the study. Description of **(a)** an epoch classifier and **(b)** LSTM-based post-processing module.](image/Fig_1.png)
+<img src="image/Fig_1.png" width="50%">
 
 
 
