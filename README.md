@@ -157,7 +157,7 @@ SHAP results of the epoch classifiers revealed that ⚠️***clinical informatio
 
 The results shown below clearly indicates that increased window size results in improved test AUROC, ⚠️***implying the importance of long-range temporal relations***⚠️. This aligns with the assertion made in the original paper.
 
-An interesting result is that the incorporation of ⚠️***clinical information did not improve model performance in larger window settings***⚠️, but rather degraded the performance, which seems counterintuitive. It can be attributed to the fact that clinical information is too global in scale and there is some possibility that they can induce patient-specific bias.
+An interesting result is that the incorporation of ⚠️***clinical information did not improve model performance in larger window settings***⚠️, but rather degraded the performance, which seems counterintuitive. It can be attributed to the fact that clinical information is too global in scale and there is some possibility that they may have induced patient-specific bias.
 
 <img src="image/Fig_4.png" width="50%">
 
