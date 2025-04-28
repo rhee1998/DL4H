@@ -31,7 +31,7 @@
  
   * The use of ***Clinical Information*** such as obesity and sleep apnea status to enhance classification peroformance.
  
-* As a result, they trained 6 different models, and their performance is shown below:
+* As a result, 6 different models were trained, and their performance is shown below:
 
 | Random Effects   | LSTM post-processing | AUROC               | F1 Score              |
 |:----------------:|:--------------------:|:-------------------:|:---------------------:|
@@ -44,6 +44,19 @@
 
 
 ### **3. What's New?: Our Efforts to Extend the Research**
+
+* For the final project, we take three different approaches to extend the results of the original paper
+
+  (1) First, we integrate ***<u>various clinical features</u>*** other than just obesity and apnea severity. Demographics such as age and sex, as well as comorbidity status (chronic diseases, psychological disorders, gastroesophageal reflux disease, etc.) are further included.
+
+  (2) Second, we perform a series of ***<u>SHAP analyses to quantitatively asssess the Epoch Classifier's interpretability</u>***. This was done in search for evidence for the justification of adding clinical features, which, unfortunately, turned out to be unsuccessful.
+
+  (3) Thirdly, we explored the ***<u>impact of window sizes on model performance</u>*** when developing LSTM-based post-processing modules.
+
+* The summary of the final project is given as follows:
+
+![**Fig. 1.** An overview of the study. Description of **(a)** an epoch classifier and **(b)** LSTM-based post-processing module.](image/Fig_1.png)
+
 
 
 ## **📊 Sample Dataset**
